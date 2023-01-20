@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prince Software Systems | Home</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/png">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+    
+  <!--
+   - Sweet Alert
+  -->
+    <script src="./assets/js/sweetalert.js"></script>
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@600;700&family=Rubik:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/Nav-logo.png" alt="Logo">
+      </a>
+
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="menu-close-btn" data-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/Nav-logo.png" alt="Logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="services.html" class="navbar-link">Services</a>
+          </li>
+
+          <li>
+            <a href="products.html" class="navbar-link">Products</a>
+          </li>
+
+          <li>
+            <a href="#" onclick="return swal({title: 'Contact Us On',text:'MTN: +256780815846\nAirtel: +256740763404\nWhatsapp:256780815846\nEmail: mbaleprince29@gmail.com\nAddress: Arua,Uganda'})" class="navbar-link">Contacts</a>
+          </li>
+
+        </ul>
+          
+        <li>
+            <a href="#" onclick="window.open('https://api.whatsapp.com/send?phone=256780815846&text='+'Type Your Message Here', '_blank');" class="btn btn-secondary">Ask Question</a>
+        </li>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero">
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="./assets/images/market.png" alt="Boost your online presence">
+          </figure>
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Is Your Business Online</h1>
+
+            <p class="section-text">
+                We build your online business presence by developing and hosting your website at just affordable prices 
+                starting at as low as <b>12,000 ugshs</b> depending on the requirements of your dream website.
+            </p>    
+              
+            <form action="#about" method="post">
+              <button class="btn btn-primary">Learn More</button>
+            </form>  
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section id = "about" class="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/picture_about.png" alt="About" class="about-img">
+
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 about-title">About The Company</h2>
+
+            <p class="section-text">
+                Prince Software Systems is a Ugandan based Computer Software Company that provides highend 
+                computer software
+                products and services that are affordable to all and yet not compromising quality.
+                
+                <br><br>
+                
+                The company was founded by Mbale Prince,a senior software developer,computer hacker and consultant in the 
+                field of computer software and cyber security.
+                
+            </p>
+              
+            <form action="#services" method="post">
+              <button class="btn btn-primary">Our Services</button>
+            </form>  
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICES
+      -->
+
+      <section id="services" class="departments">
+        <div class="container">
+
+          <h2 class="h2 departments-title">Our Popular Services</h2>
+
+          <ul class="departments-list">
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" onclick="return swal('Web Development And Hosting','We develop internet applications like websites and also offer affordable hosting plans.\nWe build and launch your,\na) Blog Wesbite\nb) Business website\nc) Any other simple to complex web application')" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/web-dev.png" alt="Web Development And Hosting">
+                  </figure>
+                </a>
+
+                <a href="#" onclick="return swal('Web Development And Hosting','We develop internet applications like websites and also offer affordable hosting plans.\nWe build and launch your,\na) Blog Wesbite\nb) Business website\nc) Any other simple to complex web application')">
+                  <h3 class="h3 card-title">Web Development and Hosting</h3>
+                </a>
+
+                <p class="card-text">
+                  We develop internet applications like websites and also provide affordable hosting plans.
+                </p>
+
+                <a href="#" onclick="return swal('Web Development And Hosting','We develop internet applications like websites and also offer affordable hosting plans.\nWe build and launch your,\na) Blog Wesbite\nb) Business website\nc) Any other simple to complex web application starting as low as 12,000 to millions.')" class="card-link">
+                  <span>Learn More</span>
+
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" onclick="return swal('Desktop Software Development','We build software specially designed for the needs of your organisation')" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/desktop.jpg" alt="Desktop Software Development">
+                  </figure>
+                </a>
+
+                <a href="#" onclick="return swal('Desktop Software Development','We build software specially designed for the needs of your organisation')">
+                  <h3 class="h3 card-title">Desktop Software Development</h3>
+                </a>
+
+                <p class="card-text">
+                  Custom made software products that suite the demand of your business.
+                </p>
+
+                <a href="#" onclick="return swal('Desktop Software Development','We build software specially designed for the needs of your organisation')" class="card-link">
+                  <span>Learn More</span>
+
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" onclick="return swal('Android App Development','We develop high quality android apps for all businesses and individuals and help to launch and market developed apps to playstore and the internet at large')" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/apps.png" alt="Mobile App development">
+                  </figure>
+                </a>
+
+                <a href="#" onclick="return swal('Android App Development','We develop high quality android apps for all businesses and individuals and help to launch and market developed apps to playstore and the internet at large')">
+                  <h3 class="h3 card-title">Mobile App Development</h3>
+                </a>
+
+                <p class="card-text">
+                  We develop high quality android apps for all businesses and help to launch developed apps to playstore
+                </p>
+
+                <a href="#" onclick="return swal('Android App Development','We develop high quality android apps for all businesses and individuals and help to launch and market developed apps to playstore and the internet at large')" class="card-link">
+                  <span>Learn More</span>
+
+                  <ion-icon name="arrow-forward"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+            
+          <form action="services.html" method="post">
+              <button class="btn btn-primary">View All Services</button>
+          </form>    
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #Products
+      -->
+
+      <section id="products" class="departments">
+        <div class="container">
+
+          <h2 class="h2 departments-title">Some Of Our Products</h2>
+
+          <ul class="departments-list">
+
+            <li>
+              <div class="departments-card">
+
+                <a href="https://github.com/mbaleprince/LugbaraDictionary_1.2/raw/master/Dictionary.exe" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/dictionary.png" alt="Lugbara-English Dictionary">
+                  </figure>
+                </a>
+
+                <a href="https://github.com/mbaleprince/LugbaraDictionary_1.2/raw/master/Dictionary.exe">
+                  <h3 class="h3 card-title">Lugbara-English Dictionary</h3>
+                </a>
+
+                <p class="card-text">
+                  A dictionary that translates English to Lugbara-ti and vice-versa
+                </p>
+
+                <a href="https://github.com/mbaleprince/LugbaraDictionary_1.2/raw/master/Dictionary.exe" class="card-link">
+                  <span>Download Now</span>
+
+                  <ion-icon name="cloud-download-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="departments-card">
+
+                <a href="https://play.google.com/store/apps/developer?id=Prince%20Software%20Systems" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/ongobuku.png" alt="Ongobuku">
+                  </figure>
+                </a>
+
+                <a href="https://play.google.com/store/apps/developer?id=Prince%20Software%20Systems">
+                  <h3 class="h3 card-title">Ongobuku</h3>
+                </a>
+
+                <p class="card-text">
+                  An android app for all lugbara church hymns particularly for madi-westnile diocese
+                </p>
+
+                <a href="https://play.google.com/store/apps/developer?id=Prince%20Software%20Systems" class="card-link">
+                  <span>Download Now</span>
+
+                  <ion-icon name="cloud-download-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="departments-card">
+
+                <a href="#" class="card-banner">
+                  <figure>
+                    <img src="./assets/images/nurse.png" alt="Mobile App development">
+                  </figure>
+                </a>
+
+                <a href="https://play.google.com/store/apps/developer?id=Prince%20Software%20Systems">
+                  <h3 class="h3 card-title">Nursing Procedures</h3>
+                </a>
+
+                <p class="card-text">
+                  On demand,must have android app for all student and professional nurses
+                </p>
+
+                <a href="https://play.google.com/store/apps/developer?id=Prince%20Software%20Systems" class="card-link">
+                  <span>Download Now</span>
+
+                  <ion-icon name="cloud-download-outline"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+            
+        <form action="products.html" method="post">
+              <button class="btn btn-primary">See All Products</button>
+          </form>     
+
+        </div>
+      </section>
+        
+        
+        
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-link-title">Services</p>
+            </li>
+
+            <li>
+              <a href="services.html#services" class="footer-link">Web Development & Hosting</a>
+            </li>
+
+            <li>
+              <a href="services.html#services" class="footer-link">Desktop Software Development</a>
+            </li>
+
+            <li>
+              <a href="services.html#services" class="footer-link">Mobile App Development</a>
+            </li>
+
+            <li>
+              <a href="services.html#consult" class="footer-link">Consultations</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-link-title">Company</p>
+            </li>
+              
+            <li>
+              <a href="products.html" class="footer-link">Our Products</a>
+            </li>  
+
+            <li>
+              <a href="index.html#about" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-link-title">Others</p>
+            </li>
+              
+            <li>
+              <a href="https://princesoftwaresystems.blogspot.com" class="footer-link">Blog</a>
+            </li>  
+              
+            <li>
+              <a href="https://play.google.com/store/apps/developer?id=Prince%20Software%20Systems" class="footer-link">PlayStore</a>
+            </li>  
+              
+            <li>
+              <a href="https://www.youtube.com/@mbaleprince4690" class="footer-link">Youtube</a>
+            </li> 
+            
+            <li>
+              <a href="#" onclick="return swal('Payments','MTN Mobile Money: 0780815846 (Mbale Prince)\nAirtel Mobile Money: 0740763404 (Mbale Prince)\nBank Deposit: 3203115880 (Centenary Bank,Name:Mbale Prince)')" class="footer-link">Payments</a>
+            </li>  
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-link-title">Contacts</p>
+            </li>
+
+            <li class="contact-item">
+              <span>Calls: </span>
+
+              <a href="tel:0780815846" class="contact-link">+256780815846</a>
+            </li>
+
+            <li class="contact-item">
+              <span>Email : </span>
+
+              <a href="mailto:mbaleprince29@gmail.com" class="contact-link">mbaleprince29@gmail.com</a>
+            </li>
+
+            <li class="contact-item">
+              <span>Address : </span>
+
+              <a href="#" class="contact-link">
+                <address>Arua,Uganda</address>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2023 <a href="">Prince Software Systems</a>. All rights reserved
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+      <img name="arrow-up" src="assets/images/arrow-up.png"/>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
